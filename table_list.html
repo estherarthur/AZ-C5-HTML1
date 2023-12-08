@@ -1,26 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HTML Lists</title>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>HTML Lists</title>
 </head>
 <body>
-
-    <ul type="square">
-        <h1>PROJECT</h1>
-        <li>Predictive Analysis for Cybersecurity</li>
-        <li>AI-Powered Health Care Recommendation System</li>
-        <li>Social Media Sentiment Analysis for Stock Market Prediction</li>
-        <li>Energy Consumption Optimization in Smart Cities</li>
-    </ul>
-
-    <ol type="a">
-        <h2>HISTORY</h2>
-        <li>History of colonialism</li>
-        <li>Subjugation and revolutions</li>
-        <li>Colonial rationale and resistance</li>       
-    </ol>
+    <table border="1">
+        <caption>Time Table</caption>
+        <thead>
+        <tr>
+            <th>Hours</th>
+            <th>Mon</th>
+            <th>Tues</th>
+            <th>Wed</th>
+            <th>Thur</th>
+            <th>Fri</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Arts</td>
+            </tr>
+            <tr>
+                <td rowspan="5">
+                    <strong>Hours</strong></td>
+                <td>Social</td>
+                <td>History</td>
+                <td>English</td>
+                <td>Social</td>
+                <td>Sports</td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <strong>Lunch</strong></td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td>Maths</td>
+                <td rowspan="2">
+                    Project
+                    <ul type="square">
+                        <li>Hospital Management System </li>
+                        <li>Weather Forecasting APP</li>
+                        <li>News Feed App</li>
+                        <li>Optical Character Recognition System (OCR)</li>
+                        <li>Library Management System</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Social</td>
+                <td>
+                    History
+                    <ol type="a">
+                        <li>Ancient Egypt</li>
+                        <li>American Neutrality In World War 1</li>
+                        <li>The legacy of Alexander the Great</li>
+                        <li>Causes of Thirty Years War</li>
+                        <li>American Civil War</li>
+                    </ol>
+                </td>
+                <td>English</td>
+                <td>Social</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
